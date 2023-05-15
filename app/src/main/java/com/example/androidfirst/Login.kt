@@ -84,7 +84,7 @@ class Login : AppCompatActivity() {
                     ).show()
 
 
-                    startActivity(Intent(this@Login, Dashboard::class.java))
+                    startActivity(intent)
                 } else {
                     Toast.makeText(this@Login, "User does not exists!", Toast.LENGTH_LONG)
                         .show()

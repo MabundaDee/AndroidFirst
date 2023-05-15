@@ -16,8 +16,14 @@ class Dashboard : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dashboard)
 
-        val welcomeText = "Welcome " + intent.getStringExtra("Username") + "!"
-        val deWelcome = findViewById<TextView>(R.id.deWelcome);
+
+
+        welcomeText ="Welcome "+ getIntent().getStringExtra("Username").toString() + "!";
+        deWelcome = this.findViewById(R.id.deWelcome);
         deWelcome.setText(welcomeText);
+
+//        val welcomeText = "Welcome " + intent.getStringExtra("Username") + "!"
+//        val deWelcome = findViewById<TextView>(R.id.deWelcome);
+//        deWelcome.setText(welcomeText);
     }
 }
