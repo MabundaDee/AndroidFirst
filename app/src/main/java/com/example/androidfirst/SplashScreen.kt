@@ -13,8 +13,8 @@ class SplashScreen : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
         window.setFlags(
-            WindowManager.LayoutParams.FLAGS_CHANGED,
-            WindowManager.LayoutParams.FLAGS_CHANGED
+            WindowManager.LayoutParams.FLAG_FULLSCREEN,
+            WindowManager.LayoutParams.FLAG_FULLSCREEN
         )
 
         Handler(Looper.getMainLooper()).postDelayed({

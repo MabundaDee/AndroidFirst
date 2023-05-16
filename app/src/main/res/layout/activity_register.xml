@@ -14,26 +14,31 @@
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:padding="10dp"
-        android:text="SpringDroid"
-        android:textColor="@color/colorPrimaryDark"
+        android:text="Game ! Hub..."
+        android:textColor="#0B31A1"
         android:textSize="60sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149" />
 
     <TextView
         android:id="@+id/dmitry2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="USER REGISTRATION"
+        android:text="Create your Account"
         android:textColor="#000"
         android:textSize="20sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dmitry" />
+        app:layout_constraintTop_toBottomOf="@+id/dmitry"
+        app:layout_constraintVertical_bias="0.071" />
 
     <EditText
         android:id="@+id/etRUserName"
@@ -44,10 +49,12 @@
         android:hint="Username"
         android:inputType="text"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dmitry2" />
+        app:layout_constraintTop_toBottomOf="@+id/dmitry2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/etRPassword"
@@ -58,38 +65,42 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etRUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/etRUserName"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_orange_dark"
-        android:text="REGISTER"
-        android:textColor="@android:color/background_dark"
+        android:background="#0B31A1"
+        android:text="Sign up"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683" />
 
     <TextView
         android:id="@+id/deLoginLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:background="#D68E8E"
+        android:background="@color/colorAccent"
         android:gravity="center"
+        android:text="Already have an account?\nClick to sign in"
+        android:textColor="#4A74EC"
         android:textColorHint="@color/white"
-        android:text="Already a user?\nClick here to login"
-        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etRPassword" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.874" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
